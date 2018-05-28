@@ -1,22 +1,45 @@
 @import url('https://fonts.googleapis.com/css?family=Slabo+27px');
 
 
-/* Container -------------------------------- */
+/* Container, parahraps -------------------------------- */
 
 .wrapper {
-
-	width: 80%;
+	
 	margin: 0 auto;
 	padding-top: 20px;
 }
 
 p {
-	margin: 15px 0;
+	width: 90%;
+	margin: 1em auto;
 	font: 1.2em 'Slabo 27px', serif;
 }
 
-/*.text:hover{
+/* Styles for subtitles --------------------------- */
+
+.orangeColorText{
+	color: orange !important;
+}
+.black{
+	color: inherit;
+}
+.text:hover{
 	color: green;
-	background: green;
-	
-}*/
+	cursor: pointer;
+}
+
+/* Customization of video player  --------------------------- */
+
+.mejs__controls{
+	background: #009688 !important;
+}
+
+/* Media querities for descktop --------------------------- */
+
+@media (min-width: 768px) {
+	.wrapper {
+		width: 80%;
+	}
+	p {
+		width: 100%;
+}
